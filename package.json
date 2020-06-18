@@ -1,0 +1,30 @@
+{
+  "name": "autistic-test",
+  "version": "1.0.0",
+  "description": "Teste de Diagnóstico para Autismo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "migrate-local": "sequelize db:migrate",
+    "gcloud-dpeloy": "gcloud functions deploy autistictest-core --runtime nodejs8 --trigger-http --entry-point app"
+  },
+  "author": "Yan",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.1.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http-status-codes": "^1.4.0",
+    "jsonschema": "^1.2.5",
+    "mysql2": "^2.1.0",
+    "path": "^0.12.7",
+    "sequelize": "^5.21.5",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.5.1"
+  }
+}
